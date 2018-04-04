@@ -23,7 +23,7 @@ More descriptions of dashboards forthcoming.
 - Team discussion forum. 
 - Jira hooks
 - Confluence integration
-- Documentation and specification version tracked storage and lookup. 
+- Documentation and specification version tracked storage and fast search. 
 - Requirements 
 - Checklists for project readiness start, status goals, exit criteria.
 - Bounty board for bugs, solutions, teams with backlogs that need assistance.
@@ -38,7 +38,15 @@ More descriptions of dashboards forthcoming.
 - Unit, functional, integration, spec compliance test interfaces.
 - Automation for testing inband, out of band, software, hardware, provisioning, applications, ui - whether server, mobile, embedded, client.
 - Match test fails, requirements with jira, git, etc.
-- On the fly regression bucket selections.
+- On the fly regression bucket selections. (Kicked off from a build system like Jenkins)
 - AI assited regression bucket suggestions for rolling releases.
+- Hardware inventory tracking
 
- 
+
+# User base roles
+- Project Manager
+- Executive 
+- Product engineer
+- Test design engineer
+- Test execution engineer
+
