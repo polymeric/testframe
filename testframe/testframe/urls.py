@@ -21,5 +21,9 @@ urlpatterns = [
     path('main/', include('main.urls')),
     path('dashboard/', include('dashboard.urls')),
     path('projects/', include('projects.urls')),
+    path('reports/', include('reports.urls')),
+    path('requirements/', include('requirements.urls')),
+    path('tcases/', include('tcases.urls')),
+    path('tplans/', include('tplans.urls')),
     path('admin/', admin.site.urls),
 ]
