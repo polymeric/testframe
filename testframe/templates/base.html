@@ -32,39 +32,39 @@
       <div class="row">
         <nav class="col-md-2 d-none d-md-block navbar-default sidebar">
           <div class="sidebar-sticky">
-            <ul class="nav flex-column">
+            <ul class="nav nav-pills nav-fill flex-column">
               <li class="nav-item">
-                <a class="nav-link active" href="{% url "dashboard_view" %}">
+                <a class="nav-link {% block active_dashboard_view %}{% endblock %}" href="{% url "dashboard_view" %}">
                   <span data-feather="home"></span>
                   Dashboard <span class="sr-only">(current)</span>
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url "projects_view" %}">
+                <a class="nav-link {% block active_projects_view %}{% endblock %}" href="{% url "projects_view" %}">
                   <span data-feather="file"></span>
                   Projects
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url "requirements_view" %}">
+                <a class="nav-link {% block active_requirements_view %}{% endblock %}" href="{% url "requirements_view" %}">
                   <span data-feather="zap"></span>
                   Requirements
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url "tplans_view" %}">
+                <a class="nav-link {% block active_tplans_view %}{% endblock %}" href="{% url "tplans_view" %}">
                   <span data-feather="play-circle"></span>
                   Test Plans
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url "tcases_view" %}">
+                <a class="nav-link {% block active_tcases_view %}{% endblock %}" href="{% url "tcases_view" %}">
                   <span data-feather="crosshair"></span>
                   Test Cases
                 </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url "reports_view" %}">
+                <a class="nav-link {% block active_reports_view %}{% endblock %}" href="{% url "reports_view" %}">
                   <span data-feather="activity"></span>
                   Reports
                 </a>

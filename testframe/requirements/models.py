@@ -7,3 +7,8 @@ class Requirements(models.Model):
   description = models.TextField(blank=True)
   revision = models.PositiveSmallIntegerField(default=1)
   archived = models.BooleanField(default=False)
+
+  def __str__(self):
+    return "%s" % self.name
+  def __unicode__(self):
+    return u'%s' % self.name

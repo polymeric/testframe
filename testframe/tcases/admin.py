@@ -1,3 +1,6 @@
 from django.contrib import admin
+from tcases.models import TestCases
+from tcases.models import TestCaseCategories
 
-# Register your models here.
+admin.site.register(TestCaseCategories)
+admin.site.register(TestCases)
