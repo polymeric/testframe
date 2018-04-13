@@ -1,3 +1,4 @@
 from django.contrib import admin
+from tplans.models import TestPlans
 
-# Register your models here.
+admin.site.register(TestPlans)

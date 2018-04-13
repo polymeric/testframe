@@ -5,7 +5,31 @@
 <!-- Tables -->
 <div class="container">
   <div class="row">
-  </div>
+      <h1>Requirements</h1>
+      <hr>
+    </div>
+    <div class="row">
+      <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Created</th>
+            </tr>
+        </thead>
+          <tbody>
+              {% for req in requirements %}
+                {% if not req.archived %}
+                  <tr>
+                      <td>{{ req.name }}</td>
+                      <td>{{ req.description }}</td>
+                      <td>{{ req.created_timestamp }}</td>
+                  </tr>
+                {% endif %}
+              {% endfor %}
+          </tbody>
+      </table>
+    </div>
 </div>
 
 {% endblock %}
