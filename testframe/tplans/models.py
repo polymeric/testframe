@@ -15,3 +15,8 @@ class TestPlans(models.Model):
   phase = models.CharField(max_length=32, choices=DESIGN_PHASES, default='Acceptance')
   revision = models.PositiveSmallIntegerField(default=1)
   archived = models.BooleanField(default=False)
+
+  def __str__(self):
+    return "%s" % self.name
+  def __unicode__(self):
+    return u'%s' % self.name
