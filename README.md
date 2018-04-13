@@ -1,5 +1,5 @@
 # testframe
-A test planning, tracking and automation framework.
+A test planning, tracking and automation framework. WARNING: Early development do not use.
 
 # Design plan
 UI will be based on bootstrap with django. 
