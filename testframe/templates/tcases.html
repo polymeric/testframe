@@ -16,20 +16,20 @@
       <table class="table table-striped table-hover">
         <thead>
             <tr>
-                <th>Category</th>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Created</th>
+              <th>Category</th>
+              <th>Name</th>
+              <th>Description</th>
+              <th>Created</th>
             </tr>
         </thead>
           <tbody>
               {% for tcase in tcases %}
                 {% if not tcase.archived %}
                   <tr>
-                      <td>{{ tcase.test_category }}</td>
-                      <td>{{ tcase.name }}</td>
-                      <td>{{ tcase.description }}</td>
-                      <td>{{ tcase.created_timestamp }}</td>
+                    <td>{{ tcase.test_category }}</td>
+                    <td>{{ tcase.name }}</td>
+                    <td>{{ tcase.description }}</td>
+                    <td>{{ tcase.created_timestamp }}</td>
                   </tr>
                 {% endif %}
               {% endfor %}
