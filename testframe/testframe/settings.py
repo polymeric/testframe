@@ -16,7 +16,12 @@ import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
-from testframe.settings_secret import SECRET_KEY
+if os.environ['APP_SECRET_KEY']:
+  SECRET_KEY = os.environ["APP_SECRET_KEY"]
+else:
+  from testframe.settings_secret import SECRET_KEY
+
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/
