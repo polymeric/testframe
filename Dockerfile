@@ -5,7 +5,7 @@ WORKDIR /usr/src/app
 RUN git clone https://github.com/polymeric/testframe.git
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
-RUN X=$("testframe/utils/django-secret-keygen.py");echo "SECRET_KEY="$X"" > testframe/testframe/settings_secrets.py;cp /usr/src/app/testframe/testframe/
+RUN X=$("testframe/utils/django-secret-keygen.py");echo "SECRET_KEY="$X"" > testframe/testframe/settings_secrets.py
 RUN ["python", "testframe/manage.py", "makemigrations"]
 RUN ["python", "testframe/manage.py", "migrate"]
 
