@@ -13,7 +13,7 @@ COPY . .
 EXPOSE 8000
 # To run gunicorn server to run django dev server comment out these two lines
 WORKDIR /usr/src/app/testframe/
-CMD testframe/start.sh
+CMD ./start.sh
 
 # To run django dev server uncomment line below and comment out two lines above
 #CMD ["python", "testframe/manage.py", "runserver", "0.0.0.0:8000"]
