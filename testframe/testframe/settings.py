@@ -130,3 +130,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# Handle default auto key type warnings in django 3.2+
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
